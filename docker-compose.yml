@@ -1,0 +1,13 @@
+---
+# docker-compose.yml
+
+version: '2'
+
+services:
+  demo:
+    build: 
+      context: .
+
+    env_file: ./.env
+    environment:
+      - MY_VAR=${MY_VAR}
